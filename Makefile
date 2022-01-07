@@ -9,6 +9,7 @@ SHELL:=/bin/bash
 
 CURRENT_DIR := $(shell pwd)
 PKG_TARBALL := avs_mesh
+PKG_TARBALL_CALIB := avs_calib
 PKG_LIB_INSTALL_PATH := lib
 PKG_BIN ?= out
 
@@ -25,8 +26,9 @@ all: $(PKG_TARGET)
 
 avs-build:
 	@rm -rf $(PKG_BIN);
-	@mkdir -p $(PKG_BIN);
+	@mkdir -p $(PKG_BIN)/usr/share;
 	cp -rfa $(PKG_TARBALL) $(PKG_BIN)/;
+	cp -rfa $(PKG_TARBALL_CALIB) $(PKG_BIN)/usr/share;
 	$(call MAROC_COPY_PKG_TO_MEDIA_OUTPUT, $(RK_MEDIA_OUTPUT), $(PKG_BIN))
 
 clean: distclean
