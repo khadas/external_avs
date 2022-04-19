@@ -1,2 +1,3 @@
-release librkgfx_avs.so v5.3
-1.use new method to solve macro_offset problem of GPU remap
+release librkgfx_avs.so v5.5
+1.update source code to support stitching into a circle
+2.support complex stitching situation, ignoring which camera doing multiband blend or not
