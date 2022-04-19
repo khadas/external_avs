@@ -1,3 +1,2 @@
-release librkgfx_avs.so v5.2
-1.update rkgfx_gpu_avs.h, rename some structures
-2.support using mesh buffers as input
+release librkgfx_avs.so v5.3
+1.use new method to solve macro_offset problem of GPU remap
