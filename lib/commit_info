@@ -1,3 +1,4 @@
-release librkgfx_avs.so v4.3
-1.use GL_TRIANGLE_STRIP to draw mesh
-2.use gcc-arm-10.3 to build
+release librkgfx_avs.so v4.5
+1.output multiband image without copy
+2.cache input fd, do not create fbo and texture per frame
+3.add dependence on libmali.so
