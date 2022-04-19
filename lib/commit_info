@@ -1,4 +1,3 @@
-release librkgfx_avs.so v4.1
-1.change mesh_step from 8x8 to 32x32
-2.change yuv colorspace from BT601_limit_range to BT601_full_range
-3.support yuv_420_8bit afbc input and output
+release librkgfx_avs.so v4.3
+1.use GL_TRIANGLE_STRIP to draw mesh
+2.use gcc-arm-10.3 to build
