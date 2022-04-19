@@ -1,3 +1,3 @@
-release librkgfx_avs.so v5.0
-1.change buffer algined number from 32 to 16
-2.add interfaces to do resizing job
+release librkgfx_avs.so v5.2
+1.update rkgfx_gpu_avs.h, rename some structures
+2.support using mesh buffers as input
