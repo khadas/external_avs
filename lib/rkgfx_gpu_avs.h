@@ -25,6 +25,7 @@ RKGFX_AVS_FAILED,
 } RKGFX_AVS_STATUS;
 
 extern "C" RKGFX_AVS_STATUS RKGFX_AVS_init (void* context);
+extern "C" RKGFX_AVS_STATUS RKGFX_AVS_resize (void* context);
 extern "C" RKGFX_AVS_STATUS RKGFX_AVS_AllProcess (void* context);
 extern "C" RKGFX_AVS_STATUS RKGFX_AVS_deinit (void* context);
 extern "C" void* RKGFX_AVS_create_sync(void);

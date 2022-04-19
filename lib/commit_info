@@ -1,4 +1,3 @@
-release librkgfx_avs.so v4.5
-1.output multiband image without copy
-2.cache input fd, do not create fbo and texture per frame
-3.add dependence on libmali.so
+release librkgfx_avs.so v5.0
+1.change buffer algined number from 32 to 16
+2.add interfaces to do resizing job
