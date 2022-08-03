@@ -1,3 +1,2 @@
-release librkgfx_avs.so v5.5
-1.update source code to support stitching into a circle
-2.support complex stitching situation, ignoring which camera doing multiband blend or not
+release librkgfx_avs.so v5.6
+fix a bug in librkgfx_avs.so v5.5 to support 2 camera input situation
