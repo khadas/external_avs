@@ -27,7 +27,6 @@ all: $(PKG_TARGET)
 avs-build:
 	@rm -rf $(PKG_BIN);
 	@mkdir -p $(PKG_BIN)/usr/lib;
-	cp -rfa lib/* $(PKG_BIN)/usr/lib/
 	cp -rfa $(PKG_TARBALL_CALIB) $(PKG_BIN)/;
 	cp -rfa $(PKG_TARBALL_LUT) $(PKG_BIN)/;
 	$(call MAROC_COPY_PKG_TO_MEDIA_OUTPUT, $(RK_MEDIA_OUTPUT), $(PKG_BIN))
