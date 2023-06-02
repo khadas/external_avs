@@ -1,2 +1,4 @@
-release librkgfx_avs.so v5.6
-fix a bug in librkgfx_avs.so v5.5 to support 2 camera input situation
+release librkgfx_avs.so v6.3
+
+1. realize the "resize" funtion, allow users to freely resize the output image
+2. fixed the memory leak problem in de-initialization process
