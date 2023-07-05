@@ -26,11 +26,13 @@ all: $(PKG_TARGET)
 
 avs-build:
 	@rm -rf $(PKG_BIN);
-	@mkdir -p $(PKG_BIN)/usr/lib;
+	@mkdir -p $(PKG_BIN)/lib;
+	@mkdir -p $(PKG_BIN)/include;
 	cp -rfa $(PKG_TARBALL_CALIB) $(PKG_BIN)/;
 	cp -rfa $(PKG_TARBALL_LUT) $(PKG_BIN)/;
-	cp -rfa lib/librkgfx_avs.so  $(PKG_BIN)/usr/lib;
-	cp -rfa lib/libpanoStitchApp.so  $(PKG_BIN)/usr/lib;
+	cp -rfa lib/librkgfx_avs.so  $(PKG_BIN)/lib;
+	cp -rfa lib/libpanoStitchApp.so  $(PKG_BIN)/lib;
+	cp -rfa lib/*.h  $(PKG_BIN)/include;
 	$(call MAROC_COPY_PKG_TO_MEDIA_OUTPUT, $(RK_MEDIA_OUTPUT), $(PKG_BIN))
 
 clean: distclean
