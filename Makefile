@@ -31,6 +31,7 @@ avs-build:
 	cp -rfa $(PKG_TARBALL_CALIB) $(PKG_BIN)/;
 	cp -rfa $(PKG_TARBALL_LUT) $(PKG_BIN)/;
 	cp -rfa lib/librkgfx_avs.so  $(PKG_BIN)/lib;
+	cp -rfa lib/librkgfx_remap.so  $(PKG_BIN)/lib;
 	cp -rfa lib/libpanoStitchApp.so  $(PKG_BIN)/lib;
 	cp -rfa lib/*.h  $(PKG_BIN)/include;
 	$(call MAROC_COPY_PKG_TO_MEDIA_OUTPUT, $(RK_MEDIA_OUTPUT), $(PKG_BIN))
